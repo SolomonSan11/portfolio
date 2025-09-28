@@ -19,21 +19,24 @@ export function Navigation() {
   const navItems = [
     { href: "#about", label: "About" },
     { href: "#experience", label: "Experience" },
-    { href: "#projects", label: "Projects" },
+    // { href: "#projects", label: "Projects" },
     { href: "#contact", label: "Contact" },
   ]
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? "glass-effect border-b border-primary/20" : "bg-transparent"
-      }`}
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? "glass-effect border-b border-primary/20" : "bg-transparent"
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center hover:rotate-12 transition-transform duration-300">
-              <Zap className="h-4 w-4 text-primary-foreground" />
+            <div className="w-8 h-8 from-primary to-accent rounded-lg flex items-center justify-center hover:rotate-12 transition-transform duration-300">
+              <img
+                src="/logo.jpeg"            // Path to your logo image in public folder
+                alt="Logo"
+                className="w-7 h-7 object-contain rounded-lg" // Adjust to fit inside 8x8 container
+              />
             </div>
             <span className="font-bold text-xl gradient-text">Si Thu Nyunt Swe (Jack)</span>
           </div>
